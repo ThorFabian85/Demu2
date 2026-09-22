@@ -1,0 +1,36 @@
+DEMU2 — GitHub Pages upload
+
+This package contains the complete, built website. No installation or build commands are needed.
+
+1. Extract DEMU2-GitHub-Pages.zip on your computer.
+2. Open your Demu2 repository on GitHub. Select the main branch.
+3. Choose Add file > Upload files. Drag the extracted CONTENTS into the upload area:
+   index.html, favicon.svg, the assets folder, and .nojekyll.
+   Keep the assets folder intact. Upload the contents, not the ZIP or its enclosing folder.
+   index.html must appear beside your existing README.md at the repository's top level.
+   You can leave your existing source files in place.
+4. Click Commit changes and commit to main.
+5. Go to Settings > Pages. Under Build and deployment, select:
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /(root)
+   Click Save if you changed these settings.
+6. Wait for the Pages deployment to finish, then click Visit site on the Pages settings screen.
+   Publishing may take up to 10 minutes. Refresh with Ctrl+F5 if the old page is cached.
+
+The .nojekyll file may be hidden by your file manager. Include it if shown.
+If it was not uploaded, use GitHub's Add file > Create new file, name it .nojekyll,
+leave its contents empty, and commit it to main. This disables the default Jekyll build.
+
+If you still see the README: confirm that index.html is at the top level of main,
+not inside another folder, and that Pages is publishing main / (root).
+If styling or the PDF is missing: confirm that the entire assets folder was uploaded
+beside index.html, preserving the filenames and capital letters.
+
+Included: the interactive dual-torus illustration, all five argument panels,
+25-chapter navigation, cover, and the complete 246-page thesis PDF with clickable
+footer page numbers returning to its table of contents.
+
+Reference:
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
