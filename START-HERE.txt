@@ -1,0 +1,48 @@
+DEMU2 WEBSITE — START HERE
+==========================
+
+This ZIP contains the website source, interactive model, cover artwork,
+and complete 246-page thesis PDF with clickable return-to-contents links.
+
+RUN IT ON YOUR COMPUTER
+
+1. Extract the ZIP. Open the DEMU2-Website folder in Visual Studio Code.
+2. Install Node.js 22.13 or later if it is not installed.
+3. Open Terminal > New Terminal in Visual Studio Code.
+4. Run these commands, one line at a time:
+
+   npm install -g pnpm@11.25.0
+   pnpm install --frozen-lockfile
+   pnpm dev
+
+5. Open http://localhost:5173 in your browser.
+6. Keep the terminal running while using the site. Press Ctrl+C to stop.
+
+The first installation needs an internet connection. You do not need an
+API key or a paid account to run the site's reading and interactive features.
+This is a React application: use the local server rather than opening a
+file directly in the browser.
+
+WHERE TO EDIT
+
+app/page.tsx             Page content, reader, and interactions
+app/globals.css          Colours, typography, spacing, and mobile layouts
+app/torus.tsx            Animated, rotatable conceptual model
+app/chapters.json        Chapter titles and PDF destinations
+app/layout.tsx           Website title and description
+public/assets/           Cover image and thesis PDF
+public/favicon.svg       Browser icon
+
+BUILD A PRODUCTION VERSION
+
+   pnpm build
+
+The existing configuration builds a Cloudflare Workers application.
+Deploying to another hosting platform may require adapting that configuration.
+
+ABOUT THIS EXPORT
+
+The ZIP includes the package lockfile and dependency licences shipped with
+this project. Installed dependencies, cached builds, repository history,
+and the hosted site's project identifier are omitted. Your published site
+is unaffected by changes to this downloaded copy.
